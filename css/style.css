@@ -69,7 +69,6 @@ section {
 }
 
 /* HEADER */
-
 .header {
     position: fixed;
     top: 0;
@@ -95,7 +94,7 @@ section {
 
 .header .navbar a {
     margin: 0 1rem;
-    font-size: 1.7rem;
+    font-size: 2.3rem;
     color: var(--main-color);
 }
 
@@ -111,7 +110,7 @@ section {
 }
 
 .home {
-    min-height: 100vh;
+    
     padding-top: 12rem;
     background: url(../image/home-background.png) no-repeat;
     background-position: center;
@@ -141,12 +140,9 @@ section {
 }
 
 @keyframes float {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: translateY(0rem);
     }
-
     50% {
         transform: translateY(-7rem);
     }
@@ -164,10 +160,10 @@ section {
 }
 
 .home .image-slider img {
-    height: 25rem;
+    height: 35rem;
     margin: 0 .5rem;
-    cursor: pointer;
     margin-top: 5rem;
+    cursor: pointer;
 }
 
 .home .image-slider img:hover {
@@ -191,13 +187,10 @@ section {
 }
 
 @keyframes aboutImage {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: scale(.9);
         border-radius: var(--border-radius-hover);
     }
-
     50% {
         transform: scale(.8);
         border-radius: var(--border-radius);
@@ -346,7 +339,7 @@ section {
 }
 
 .review .review-slider .box .stars {
-    padding: .5rem 0
+    padding: .5rem 0;
 }
 
 .review .review-slider .box .stars i {
@@ -471,7 +464,6 @@ section {
     color: var(--main-color);
     line-height: 1.6;
 }
-
 
 @media (max-width: 991px) {
     html {
