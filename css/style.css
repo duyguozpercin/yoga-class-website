@@ -16,7 +16,6 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -457,6 +456,22 @@ section {
     border-bottom: var(--border-hover);
 }
 
+.nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-box {
+    text-align: center;
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--main-color);
+    line-height: 1.6;
+}
+
 
 @media (max-width: 991px) {
     html {
@@ -467,7 +482,7 @@ section {
         padding: 3rem;
     }
 
-      section {
+    section {
         padding: 2rem;
     }
 }
@@ -528,6 +543,11 @@ section {
         margin-left: 0;
         margin-top: -6rem;
     }
+
+    .quote-box {
+        font-size: 1.3rem;
+        padding: 0 1.5rem;
+    }
 }
 
 @media (max-width: 450px) {
@@ -535,7 +555,7 @@ section {
         font-size: 50%;
     }
 
-     .home .row .image img {
+    .home .row .image img {
         height: auto;
         width: 100%;
     }

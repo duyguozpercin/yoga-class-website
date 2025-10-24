@@ -40,3 +40,22 @@ const swiper = new Swiper(".review-slider", {
         }
     },
 });
+
+async function fetchQuote() {
+  try {
+    const response = await fetch("quotes.json");
+    const data = await response.json();
+
+   
+    const randomIndex = Math.floor(Math.random() * data.length);
+    const quote = data[randomIndex];
+
+    document.getElementById("quote-text").textContent = `"${quote.content}" — ${quote.author}`;
+  } catch (error) {
+    
+    document.getElementById("quote-text").textContent =
+      '"Coffee is always a good idea." ☕️';
+  }
+}
+
+document.addEventListener("DOMContentLoaded", fetchQuote);
