@@ -459,11 +459,13 @@ section {
 .quote-box {
     text-align: center;
     margin-top: 0.6rem;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-style: italic;
     color: var(--main-color);
     line-height: 1.6;
+
 }
+
 
 @media (max-width: 991px) {
     html {
